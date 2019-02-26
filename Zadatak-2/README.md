@@ -1,8 +1,13 @@
 # 3TG-zadatak-1
-Strukture
 
-Deklarirati strukturu Drzava za pamćenje slijedećih podataka: naziv države, površina države, broj stanovnika države, naziv najvišeg vrha, visina najvišeg vrha (u m). Učitati podatke za 5 država, spremiti u polje tipa te strukture i čitavo polje spremiti u datoteku. Zatvoriti datoteku.
+Klase
 
-Ponovno pristupiti datoteci. Pročitati podatke pa ispisati na ekranu ime i broj stanovnika države sa najviše stanovnika. Dodatno ispisati na ekran tri države sa najvišim vrhovima od najvećeg do najmanjeg u obliku ime države, vrh i visina.
+Napraviti program koji će računati opseg i površinu raznostraničnog trokuta. Podaci za trokut i odgovarajuće metode spremljeni su u klasu. Površina i opseg računaju se pozivima odgovarajućih metoda koje vraćaju brojeve. Ispis je iz funkcije main().
 
-Rok za rješavanje zadatka: petak 22.2. 22.00 h.
+Pozivom metode prethodno provjeriti i da li stranice čine trokut.
+Za učitavanje napraviti posebnu metodu.
+Stranice trokuta moraju biti privatne.
+
+Površina se računa pomoću Heronove formule.
+
+Rok za rješavanje zadatka: petak 26.2. u 09.00 h.
