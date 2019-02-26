@@ -1,0 +1,70 @@
+#include <iostream>
+#include <cmath>
+#include <fstream>
+#include <algorithm>
+#include <string>
+using namespace std;
+
+
+struct drzave {
+	string imeD[5], imeV[5];
+	int pov[5], brojS[5], visinaV[5];
+	
+};
+void sortiranje (int A[], int N) {
+	int i, j, min, zamjeni;
+	for (i = 0; i < N; i++) {
+		min = i;
+		for (j = i + 1; j < N; j++) {
+			if (A[j] < A[min]) min = j;
+		}
+		zamjeni = A[i];
+		A[i] = A[min];
+		A[min] = zamjeni;
+	}
+}
+
+
+int main()
+{
+	drzave d;
+	for(int i=0; i<5; i++)
+	{
+		cout << "Ime drzave "; cin>>d.imeD[i];
+		cout << "Broj stanovnika "; cin >>d.brojS[i];
+		cout << "Ime vrha "; cin >> d.imeV[i];
+		cout << "Visina vrha "; cin >> d.visinaV[i];
+		cout << "Povrsina "; cin >> d.pov[i];
+	}
+	
+	fstream myfile;
+	myfile.open("D:\\Users\\Korisnik\\vjezba.txt");
+	
+	for(int i=0; i<5; i++)
+	{
+		myfile << "Ime drzave: " << d.imeD[i] << " " << endl;
+		myfile << "Broj stanovnika: " << d.brojS[i] << " " << endl;
+		myfile << "Ime vrha: " << d.imeV[i] << " " << endl;
+		myfile << "Visina vrha: " << d.visinaV[i] << " " << endl;
+		myfile << "Povrsina: " << d.pov[i] << " " << endl << endl;
+	}
+	myfile.close();
+	
+	
+	myfile.open("D:\\Users\\Korisnik\\vjezba.txt");
+	if (myfile.is_open())
+	{
+		string line; 
+		getline (myfile, line);
+		cout << line << endl;
+	}
+	myfile.close();
+	
+	sortiranje (d.brojS[], 5);
+	sortiranje (d.visinaV[],5);
+	sortiranje (d.pov[], 5);
+	
+	cout << "Najveci broj stanovnika iznosi: " << d.brojS[5];
+	cout << "Visina najveceg vrha iznosi: " << d.visinaV[5];
+	cout << "Najveca povrsina iznosi: " << d.pov[5];
+}
