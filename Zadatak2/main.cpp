@@ -26,7 +26,7 @@ int main()
 
 	std::cout << "Opseg: "		<< t.Opseg()	  << "\n";
 	std::cout << "Povrsina: "	<< t.Povrsina()   << "\n";
-	std::cout << "isTriangle: " << t.isTriangle() << "\n";
+	std::cout << "isTriangle: " 	<< t.isTriangle() << "\n";
 
 	printf("\n");
 	system("pause");
