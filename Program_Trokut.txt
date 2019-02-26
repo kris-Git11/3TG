@@ -1,0 +1,72 @@
+#include iostream
+#include fstream
+#include string.h
+#include cstdlib
+#include math.h
+using namespace std;
+
+class Trokut
+{
+private
+    double x, y, z;
+public
+    void citaj_stranice ()
+    {
+        cout  a ;
+        cin  x;
+        cout  b ;
+        cin  y;
+        cout  c ;
+        cin  z;
+    };
+    bool provjeri_stranice ()
+    {
+        if (x + y  z)
+        {
+            if (x + z  y)
+            {
+                if (y + z  x)
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
+    };
+    double izracunaj_opseg ()
+    {
+        double Opseg;
+        Opseg = x + y + z;
+        return Opseg;
+    };
+    double izracunaj_povrsinu ()
+    {
+        double Povrsina;
+        double s = (x + y + z)  2;
+        Povrsina = sqrt(s  (s - x)  (s - y)  (s - z));
+        return Povrsina;
+    };
+};
+
+int main()
+{
+    double Opseg, Povrsina;
+
+    Trokut T1;
+
+    T1.citaj_stranice ();
+
+    if (T1.provjeri_stranice())
+    {
+        Opseg = T1.izracunaj_opseg();
+        Povrsina = T1.izracunaj_povrsinu();
+
+        cout  O   Opseg  endl;
+        cout  P   Povrsina  endl;
+    }
+
+    else
+        cout  Nije trokut.;
+
+    return 0;
+}
