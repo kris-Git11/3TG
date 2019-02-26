@@ -7,7 +7,7 @@ class Triangle
 public:
 	Triangle() {}
 
-	T Opseg()		{ return a + b + c; }
+	T Opseg()	{ return a + b + c; }
 	T Povrsina()	{ T s = Opseg() / 2;	return (T)std::sqrt((double)(s * (s - a) * (s - b) * (s - c))); }
 
 	bool isTriangle() { if (this->a + this->b < this->c) return false; else return true; }
