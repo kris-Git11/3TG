@@ -34,5 +34,6 @@ int main()
 
 	cout << "Opseg: " << T.opseg() << endl << "Povrsina: " << T.povrsina() << endl;
 
+	system("pause");
 	return 0;
 }
