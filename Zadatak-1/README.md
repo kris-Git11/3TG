@@ -1,5 +1,5 @@
 # 3TG-zadatak-1
-Strukture
+Strukture, datoteke, polja struktura
 
 Deklarirati strukturu Drzava za pamćenje slijedećih podataka: naziv države, površina države, broj stanovnika države, naziv najvišeg vrha, visina najvišeg vrha (u m). Učitati podatke za 5 država, spremiti u polje tipa te strukture i čitavo polje spremiti u datoteku. Zatvoriti datoteku.
 

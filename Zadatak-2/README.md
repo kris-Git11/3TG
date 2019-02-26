@@ -1,6 +1,6 @@
 # 3TG-zadatak-2
 
-Klase
+Klase, trokut
 
 Napraviti program koji će računati opseg i površinu raznostraničnog trokuta. Podaci za trokut i odgovarajuće metode spremljeni su u klasu. Površina i opseg računaju se pozivima odgovarajućih metoda koje vraćaju brojeve. Ispis je iz funkcije main().
 
