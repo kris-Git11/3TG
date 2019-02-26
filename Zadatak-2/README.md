@@ -1,4 +1,4 @@
-# 3TG-zadatak-1
+# 3TG-zadatak-2
 
 Klase
 
