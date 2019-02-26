@@ -51,7 +51,7 @@ int main()
 			<< "\nPovrsina drzave: " << drzave[i].povrsina_drzave
 			<< "\nBroj stanovnika drzave: " <<  drzave[i].broj_stanovnika_drzave
 			<< "\nNaziv najviseg vrha: " <<  drzave[i].naziv_najviseg_vrha
-			<< "\nVisina najvišeg vrha (u m): " << drzave[i].visina_najviseg_vrha_m
+			<< "\nVisina najviÅ¡eg vrha (u m): " << drzave[i].visina_najviseg_vrha_m
 			<< " m\n";
 	}
 
