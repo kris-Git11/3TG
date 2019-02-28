@@ -2,7 +2,6 @@
 #include <string>
 #include <algorithm>
 #include <vector>
-#include <iomanip>
 
 class Ucenik
 {
@@ -59,7 +58,7 @@ private:
 	{
 		for (auto i : m_ocjene)
 		{
-			if (i == 0)
+			if (i == 1)
 				return false;
 		}
 
@@ -80,7 +79,7 @@ int main()
 	}
 
 	Ucenik temp1("Ivan" , "Ivanovic",  { 3, 2, 2, 2, 4 });
-	Ucenik temp2("Josip", "Josipovic", { 5, 4, 4, 2, 2 });
+	Ucenik temp2("Josip", "Josipovic", { 5, 4, 4, 2, 1 });
 
 	ucenici[3] = temp1;
 	ucenici[4] = temp2;
