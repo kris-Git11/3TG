@@ -1,0 +1,8 @@
+3TG-zadatak-3
+Klase, uèenik
+
+Za nekog uèenika poznati su podaci: ime, prezime i zakljuène ocjene iz 5 predmeta. Oblikovati klasu za objekte takvog tipa. Napraviti metodu koja æe provjeriti da li su sve ocjene pozitivne i ako jesu uèeniku treba izraèunati prosjek ocjena. Taj postupak izvesti pomoæu metode koja vraæa realni broj. Uèitati podatke za tri uèenika. Za još dva uèenika podatke zadati pomoæu konstruktora. pa ispisati najboljeg od tih pet uèenika. Ispis je iz funkcije main().
+
+Za uèitavanje napraviti posebnu metodu. Podaci o uèeniku trebaju biti privatni.
+
+Rok za rješavanje zadatka: nedjelja 3.3. u 22.00 h.

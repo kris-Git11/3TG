@@ -1,0 +1,10 @@
+3TG-zadatak-2
+Klase, trokut
+
+Napraviti program koji æe raèunati opseg i površinu raznostraniènog trokuta. Podaci za trokut i odgovarajuæe metode spremljeni su u klasu. Površina i opseg raèunaju se pozivima odgovarajuæih metoda koje vraæaju brojeve. Ispis je iz funkcije main().
+
+Pozivom metode prethodno provjeriti i da li stranice èine trokut. Za uèitavanje napraviti posebnu metodu. Stranice trokuta moraju biti privatne.
+
+Površina se raèuna pomoæu Heronove formule.
+
+Rok za rješavanje zadatka: petak 26.2. u 09.00 h.
