@@ -1,7 +1,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /*
  *  Name:         Zadatak 3 - klase ucenici
- *  Author:       Leon Vlašiæ
+ *  Author:       Leon VlaÅ¡iÄ‡
 */
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -19,7 +19,7 @@ public:
 	string ime;
 	string prezime;
 	int ocjena[5];
-	double prosijek;
+	double prosjek;
 	bool pozitivne;
 
 	Ucenik();
@@ -60,18 +60,18 @@ public:
 		}
 	};
 
-	double Prosijek()
+	double Prosjek()
 	{
 		double zbroj_ocjena = 0;
 		int broj_ocjena = 0;
-		prosijek = 0;
+		prosjek = 0;
 		for (int i = 0; i < 5; i++)
 		{
 			zbroj_ocjena = zbroj_ocjena + ocjena[i];
 			broj_ocjena++;
 		}
 		prosijek = zbroj_ocjena / broj_ocjena;
-		return prosijek;
+		return prosjek;
 	};
 };
 
@@ -104,10 +104,10 @@ Ucenik::Ucenik(int x)
 int main()
 {
 	Ucenik ucenik[5];
-	double prosijek_1, prosijek_2, prosijek_3;
+	double prosjek_1, prosjek_2, prosjek_3;
 	Ucenik temp;
 	string Najbolji_ucenik;
-	double Najbolji_prosijek = 0;
+	double Najbolji_prosjek = 0;
 
 
 	for (int i = 0; i < 3; i++)
@@ -121,11 +121,11 @@ int main()
 		if (ucenik[i].Pozitiva())
 		{
 			cout << "\n" << ucenik[i].ime << " " << ucenik[i].prezime;
-			cout << "; Prosijek: " << ucenik[i].Prosijek() << endl;
+			cout << "; Prosjek: " << ucenik[i].Prosjek() << endl;
 
-			if (Najbolji_prosijek < ucenik[i].Prosijek())
+			if (Najbolji_prosjek < ucenik[i].Prosjek())
 			{
-				Najbolji_prosijek = ucenik[i].Prosijek();
+				Najbolji_prosjek = ucenik[i].Prosjek();
 				Najbolji_ucenik = ucenik[i].ime + " " + ucenik[i].prezime;
 			}
 		}
@@ -135,7 +135,7 @@ int main()
 			cout << "; Uceniku nisu sve ocjene pozitivne.";
 		}
 	}
-	cout << "\n\nNajbolji ucenik je " << Najbolji_ucenik << " s prosjekom ocjena " << Najbolji_prosijek << "\n\n\n";
+	cout << "\n\nNajbolji ucenik je " << Najbolji_ucenik << " s prosjekom ocjena " << Najbolji_prosjek << "\n\n\n";
 
 
 	system("pause");
