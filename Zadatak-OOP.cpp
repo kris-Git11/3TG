@@ -47,7 +47,7 @@ public:
 	}
 
 
-	double operator+(int b)
+	double operator+(double b)
 	{
 		double at;
 		at = pot_mjest_voz * b;
