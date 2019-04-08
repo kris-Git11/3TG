@@ -1,2 +1,2 @@
-# 3TG
+# 3TG, Mihael Petričević
 Rješenja zadataka
