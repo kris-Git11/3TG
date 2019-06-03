@@ -1,0 +1,135 @@
+
+MLIN
+Graphics g = CreateGraphics();
+
+            Pen blackPen = new Pen(Color.Black, 10);
+            Pen blackPen1 = new Pen(Color.Black, 3);
+            SolidBrush greenKist = new SolidBrush(Color.ForestGreen);
+            SolidBrush zutiKist = new SolidBrush(Color.Yellow);
+            SolidBrush crniKist = new SolidBrush(Color.Black);
+            SolidBrush crveniKist = new SolidBrush(Color.Red);
+            Rectangle r1 = new Rectangle(300, 300, 600, 600);
+            Rectangle r2 = new Rectangle(400, 400, 400, 400);
+            Rectangle r3 = new Rectangle(500, 500, 200, 200);
+            Rectangle r4 = new Rectangle(550, 550, 100, 100);
+            g.DrawRectangle(blackPen, r1);
+            g.FillRectangle(greenKist, r1);
+            g.DrawRectangle(blackPen1, r2);
+            g.DrawRectangle(blackPen1, r3);
+            g.DrawRectangle(blackPen1, r4);
+            for (int i=0;i<2;i++)
+            {
+                for (int j=0;i<2;i++)
+                {
+                    g.FillEllipse(crniKist, new Rectangle(400+(400*i)-5, 400+(400*j)-5, 10, 10));
+                    g.FillEllipse(crniKist, new Rectangle(400 + (400 * i) - 5, 800 + (400 * j) - 5, 10, 10));
+                    g.FillEllipse(crniKist, new Rectangle(500 + (400 * i/2) - 5, 500 + (400 * j/2) - 5, 10, 10));
+                    g.FillEllipse(crniKist, new Rectangle(500 + (400 * i / 2) - 5, 700 + (400 * j / 2) - 5, 10, 10));
+                    g.FillEllipse(crniKist, new Rectangle(550 + (400 * i / 4) - 5, 550 + (400 * j / 4) - 5, 10, 10));
+                    g.FillEllipse(crniKist, new Rectangle(550 + (400 * i / 4) - 5, 650 + (400 * j / 4) - 5, 10, 10));
+                }
+            }
+            g.FillEllipse(crniKist, new Rectangle(500 - 5, 600 - 5, 10, 10));
+
+            g.DrawLine(blackPen1, new Point(400, 600),new Point(550,600));
+            g.DrawLine(blackPen1, new Point(600, 400), new Point(600, 550));
+            g.DrawLine(blackPen1, new Point(800, 600), new Point(650, 600));
+            g.DrawLine(blackPen1, new Point(600, 800), new Point(600, 650));
+
+            g.FillEllipse(zutiKist, new Rectangle(400 - 10, 400 - 10, 20, 20));
+            g.FillEllipse(crveniKist, new Rectangle(400 - 10, 600 - 10, 20, 20));
+            g.FillEllipse(crveniKist, new Rectangle(600 - 10, 400 - 10, 20, 20));
+            g.FillEllipse(crveniKist, new Rectangle(400 - 10, 800 - 10, 20, 20));
+            g.FillEllipse(crveniKist, new Rectangle(600 - 10, 800 - 10, 20, 20));
+            g.FillEllipse(zutiKist, new Rectangle(800 - 10, 800 - 10, 20, 20));
+            g.FillEllipse(zutiKist, new Rectangle(800 - 10, 600 - 10, 20, 20));
+            g.FillEllipse(crveniKist, new Rectangle(700 - 10, 600 - 10, 20, 20));
+            g.FillEllipse(zutiKist, new Rectangle(600 - 10, 500 - 10, 20, 20));
+            g.FillEllipse(zutiKist, new Rectangle(600 - 10, 700 - 10, 20, 20));
+            g.FillEllipse(crveniKist, new Rectangle(650 - 10, 600 - 10, 20, 20));
+            g.FillEllipse(zutiKist, new Rectangle(650 - 10, 650 - 10, 20, 20));
+            g.FillEllipse(zutiKist, new Rectangle(650 - 10, 550 - 10, 20, 20));
+            g.FillEllipse(crveniKist, new Rectangle(600 - 10, 650 - 10, 20, 20));
+            g.FillEllipse(crveniKist, new Rectangle(550 - 10, 650 - 10, 20, 20));
+            g.FillEllipse(zutiKist, new Rectangle(550 - 10, 600 - 10, 20, 20));
+            g.FillEllipse(crveniKist, new Rectangle(550 - 10, 550 - 10, 20, 20));
+            g.FillEllipse(zutiKist, new Rectangle(600 - 10, 550 - 10, 20, 20));
+
+
+GO
+
+Graphics g = CreateGraphics();
+            Pen blackPen1 = new Pen(Color.Black, 3);
+            Rectangle r1 = new Rectangle(100, 100, 600, 600);
+            g.DrawRectangle(blackPen1, r1);
+            for (int i=0;i<14;i++)
+            {
+                for (int j=0;j<14;i++)
+                {
+                    g.DrawLine(blackPen1,newPoint(100+i*30)
+                }
+            }
+
+ISPIT
+//Aland
+            /* 
+            Graphics g = CreateGraphics();
+            Pen plava = new Pen(Color.Blue);
+            SolidBrush plavikist = new SolidBrush(Color.Blue);
+
+            Pen zuta = new Pen(Color.Yellow);
+            SolidBrush zutikist = new SolidBrush(Color.Yellow);
+
+            Pen crvena = new Pen(Color.Red);
+            SolidBrush crvenikist = new SolidBrush(Color.Red);
+
+            Rectangle r1 = new Rectangle(100, 100, 310, 220);
+            Rectangle r2 = new Rectangle(100, 180, 310, 57);
+            Rectangle r4 = new Rectangle(198, 100, 57, 220);
+            Rectangle r3 = new Rectangle(100, 198, 310, 20);
+            Rectangle r5 = new Rectangle(217, 100, 20, 220);
+
+            g.FillRectangle(plavikist,r1);
+            g.FillRectangle(zutikist, r2);
+            g.FillRectangle(zutikist, r4);
+            g.FillRectangle(crvenikist, r3);
+            g.FillRectangle(crvenikist, r5);
+            */
+
+            //zimbabwe
+            Graphics g = CreateGraphics();
+            SolidBrush zelenikist = new SolidBrush(Color.Green);
+            SolidBrush zutikist = new SolidBrush(Color.Yellow);
+            SolidBrush crvenikist = new SolidBrush(Color.Red);
+            SolidBrush crnikist = new SolidBrush(Color.Black);
+            Pen bijeli = new Pen(Color.White,5);
+            SolidBrush bijeliikist = new SolidBrush(Color.White);
+
+            Rectangle r1 = new Rectangle(100, 100, 700, 50);
+            Rectangle r2 = new Rectangle(100, 150, 700, 50);
+            Rectangle r3 = new Rectangle(100, 200, 700, 50);
+            Rectangle r4 = new Rectangle(100, 250, 700, 50);
+            Rectangle r5 = new Rectangle(100, 300, 700, 50);
+            Rectangle r6 = new Rectangle(100, 350, 700, 50);
+            Rectangle r7 = new Rectangle(100, 400, 700, 50);
+            g.FillRectangle(zelenikist, r1);
+            g.FillRectangle(zutikist, r2);
+            g.FillRectangle(crvenikist, r3);
+            g.FillRectangle(crnikist, r4);
+            g.FillRectangle(crvenikist, r5);
+            g.FillRectangle(zutikist, r6);
+            g.FillRectangle(zelenikist, r7);
+
+            Point p1 = new Point(100, 100);
+            Point p2 = new Point(333, 275);
+            Point p3 = new Point(100, 450);
+            Point[] triangle = { p1, p2, p3 };
+            g.FillPolygon( new SolidBrush(Color.White), triangle);
+            g.DrawPolygon(new Pen(Color.Black, 5), triangle);
+
+            Bitmap slika = new Bitmap(@"C:\Users\android\Desktop\ikona.png");
+            g.DrawImage(slika, 125, 225);
+
+            g.Dispose();
+
+

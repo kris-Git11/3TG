@@ -1,0 +1,123 @@
+SEMAFOR
+private void Form1_Paint(object sender, PaintEventArgs e)
+{
+Graphics g = e.Graphics;
+            Pen zelenaOlovka = new Pen(Color.Green);
+            Pen crvenaOlovka = new Pen(Color.PaleVioletRed);
+            Pen plavaOlovka = new Pen(Color.DarkBlue);
+            Pen crnaOlovka = new Pen(Color.Black);
+
+            SolidBrush zeleniKist = new SolidBrush(Color.Green);
+            SolidBrush zutiKist = new SolidBrush(Color.Yellow);
+            SolidBrush crvenaKist = new SolidBrush(Color.Red);
+            SolidBrush crniKist = new SolidBrush(Color.Black);
+
+            Rectangle r1 = new Rectangle(50, 50, 50, 50);
+            Rectangle r2 = new Rectangle(50, 100, 50, 50);
+            Rectangle r3 = new Rectangle(50, 150, 50, 50);
+
+            g.DrawRectangle(plavaOlovka, r1);
+            g.DrawRectangle(crnaOlovka, r2);
+            g.DrawRectangle(crnaOlovka, r3);
+
+            g.FillRectangle(crniKist, r1);
+            g.FillRectangle(crniKist, r2);
+            g.FillRectangle(crniKist, r3);
+
+            g.FillEllipse(crvenaKist, r1);
+            g.FillEllipse(zutiKist, r2);
+            g.FillEllipse(zeleniKist, r3);
+
+            zelenaOlovka.Dispose();
+            crvenaOlovka.Dispose();
+            plavaOlovka.Dispose();
+            g.Dispose();
+}
+ŠAH
+private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+
+            for (int i=1;i<9;i++)
+            {
+                for (int j=1;j<9;j++)
+                {
+                    Pen blackPen = new Pen(Color.Black, 1);
+                    Rectangle r1 = new Rectangle(50 * i, 50 * j, 50, 50);
+                    g.DrawRectangle(blackPen, r1);
+                    if ((i + j) % 2 == 0)
+                    {
+                        SolidBrush smediKist = new SolidBrush(Color.Brown);
+                        g.FillRectangle(smediKist, r1);
+                    }
+                    if (j == 2 ) 
+                    {
+                        SolidBrush crniKist = new SolidBrush(Color.Black);
+                        g.FillEllipse(crniKist, r1);
+                    }
+                    if (j == 7)
+                    {
+                        Pen crnaOlovka = new Pen(Color.Black);
+                        SolidBrush bijeliKist = new SolidBrush(Color.White);
+                        g.FillEllipse(bijeliKist, r1);
+                        g.DrawEllipse(crnaOlovka, r1);
+                    }
+                    
+                }
+            }   
+        }
+ILUZIJA
+
+Graphics g = e.Graphics;
+            for (int i = 1; i < 18; i++)
+            {   
+                for (int j = 1; j < 11; j++)
+                {
+                    int l = 0;
+                    int b = 0;
+                    Pen grayPen = new Pen(Color.Gray, 20);
+                    Rectangle r1 = new Rectangle(100 * i, 100* j, 100, 100);
+                    g.DrawRectangle(grayPen, r1);
+                    SolidBrush crniKist = new SolidBrush(Color.Black);
+                    g.FillRectangle(crniKist, r1);
+
+                    for (int m = 0; m <= 15; m++)
+                    {
+                        b = 0;
+                        SolidBrush bijeliKist = new SolidBrush(Color.White);
+                        g.FillEllipse(bijeliKist, new Rectangle(187 + l, 187, 15, 15));
+                        for (int n=0;n<=7;n++)
+                        {
+                            b = b + 100;
+                            g.FillEllipse(bijeliKist, new Rectangle(187 + l, 187+b, 15, 15));
+
+                            
+                        }
+                        l = l + 100;
+                    }
+                }
+            }
+
+
+zastava aaland
+Graphics g = CreateGraphics();
+            Pen plava = new Pen(Color.Blue);
+            SolidBrush plavikist = new SolidBrush(Color.Blue);
+
+            Pen zuta = new Pen(Color.Yellow);
+            SolidBrush zutikist = new SolidBrush(Color.Yellow);
+
+            Pen crvena = new Pen(Color.Red);
+            SolidBrush crvenikist = new SolidBrush(Color.Red);
+
+            Rectangle r1 = new Rectangle(100, 100, 310, 220);
+            Rectangle r2 = new Rectangle(100, 180, 310, 57);
+            Rectangle r4 = new Rectangle(198, 100, 57, 220);
+            Rectangle r3 = new Rectangle(100, 198, 310, 20);
+            Rectangle r5 = new Rectangle(217, 100, 20, 220);
+
+            g.FillRectangle(plavikist,r1);
+            g.FillRectangle(zutikist, r2);
+            g.FillRectangle(zutikist, r4);
+            g.FillRectangle(crvenikist, r3);
+            g.FillRectangle(crvenikist, r5);
