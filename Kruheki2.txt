@@ -1,0 +1,17 @@
+pon b22 c12 k6 
+uto r55 z12 k32 b13 
+sri b22 c32 
+pet b22 c33 
+pon r11 z22 
+pet c44 z22 b678 
+pon z66 c22 
+sri z66 c22 
+pet c333 k222 
+pon b22 c23 
+uto b21 
+pon b12 z22 
+uto b11 c44 r12 
+sri k54 c32 
+pon c23 b5 k32 
+uto k25 c36 
+sri r56 k23 z98 

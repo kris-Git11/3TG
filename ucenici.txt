@@ -1,0 +1,5 @@
+Ivo Horvat 2 3 4 3 5 4
+Ana Mikec 5 2 5 4 3 2
+Ivica Markovic 5 5 5 5 5 4
+Eva Novak 4 3 2 4 3 5
+Karlo Bratko 4 5 3 5 5 5
